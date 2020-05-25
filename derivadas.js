@@ -112,6 +112,9 @@ $("#secondBtn").click(function(){
     {
         $("#pointDerivativeDone").hide()
     }
+    a = $('#aTerm').val();
+    b = $('#bTerm').val();
+    c = $('#cTerm').val();
 })
 
 
