@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title class="d-none">Derivadora de funciones</title>
+  </head>
+
+  <body>
+    <div class="m-5">
+      <h1>Derivadora de binomios.</h1>
+      <div id="alerta" class="alert alert-warning alert-dismissible fade hide" role="alert">
+        <strong>¡Por lo menos rellenar uno de los tres campos!</strong>
+        <button id="botonAlerta" type="button" class="close"  aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h5>Función a definir:</h5>
+          <form>
+            <div class="form-group">
+              <label for="aTerm">Término a</label>
+              <input
+                type="number"
+                class="form-control"
+                id="aTerm"
+                placeholder="Término a"
+              />
+            </div>
+            <div class="form-group">
+              <label for="bTerm">Término b</label>
+              <input
+                type="number"
+                class="form-control"
+                id="bTerm"
+                placeholder="Término b"
+              />
+            </div>
+            <div class="form-group">
+              <label for="cTerm">Término c</label>
+              <input
+                type="number"
+                class="form-control"
+                id="cTerm"
+                placeholder="Término c"
+              />
+            </div>
+            <button id="firstBtn" class="btn btn-primary" type="button">
+              Definir f(x)
+            </button>
+          </form>
+        </div>
+        <div class="col">
+          <h5 id="functionDisplay"></h5>
+          <h5 id="derivativeOption"></h5>
+          <div id="derivativeForm" class="d-none">
+            <form id="formDerivative">
+              <div class="form-group">
+                <label for="derivativePoint"
+                  >Punto a derivar en <span>f(x)</span> :
+                </label>
+                <input
+                  type="number"
+                  class="form-control"
+                  id="derivativePoint"
+                  placeholder="Ingrese número real"
+                />
+              </div>
+              <button id="secondBtn" class="btn btn-primary" type="button">
+                Derivar
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div id='derivativeResult' class="col">
+
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <a href="index.html" class="btn btn-danger mt-5">Resetear</a>
+        </div>
+      
+    </div>
+    <!-- <h1 class="d-block">Derivadora de funciones 3er grado</h1>
+    <p>ingresar coeficiente a:</p>
+    <input id="aCoef" type="number" placeholder="Coeficiente a"/>
+    <br>
+    <p>Ingresar coeficiente b:</p>
+    <input id="bCoef" type="number" placeholder="Coeficiente b"/>
+    <br>
+    <p>Ingresar coeficiente c:</p>
+    <input id="cCoef" type="number" placeholder="Coeficiente c"/>
+    <br> -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.js"
+      integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+      crossorigin="anonymous"
+    ></script>
+    <script src="derivadas.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
