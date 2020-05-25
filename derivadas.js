@@ -107,7 +107,7 @@ $("#secondBtn").click(function(){
     derivatedFunction = Number(a)*2 + 'x ' +  b;
     derivatedFunctionInPoint = a0 + 'x ' + b01;
 
-    $("#derivativeResult").html("<br><br><h5>Función derivada: <span>f'(x) = " + derivatedFunction + "</span></h5><h5 id='pointDerivativeDone'>Función derivada en un punto: <span>f'(" + x + ") = " + derivatedFunctionInPoint + "</h5>")
+    $("#derivativeResult").html("<br><br><h5 id='derivative'>Función derivada: <span class='d-block'>f'(x) = " + derivatedFunction + "</span></h5><h5 id='pointDerivativeDone'>Función derivada en un punto: <span class='d-block'>f'(" + x + ") = " + derivatedFunctionInPoint + "</h5>")
     if (x === '') 
     {
         $("#pointDerivativeDone").hide()
