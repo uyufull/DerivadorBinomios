@@ -108,13 +108,9 @@ $("#secondBtn").click(function(){
     derivatedFunctionInPoint = a0 + 'x ' + b01;
 
     $("#derivativeResult").html("<br><br><h5>Función derivada: <span>f'(x) = " + derivatedFunction + "</span></h5><h5 id='pointDerivativeDone'>Función derivada en un punto: <span>f'(" + x + ") = " + derivatedFunctionInPoint + "</h5>")
-    if ($("#derivativePoint").val() === '') 
+    if (x === '') 
     {
         $("#pointDerivativeDone").hide()
-    }
-    else
-    {
-        $("#pointDerivativeDone").show()
     }
 })
 
