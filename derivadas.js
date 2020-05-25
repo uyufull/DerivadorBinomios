@@ -94,7 +94,7 @@ $('#firstBtn').click(function() {
     
 
 $("#secondBtn").click(function(){
-    
+   
     x = $("#derivativePoint").val()
     a0 = Math.round(delta(x))
     b0 = f(Number(x)) - Number(a0)*Number(x)
@@ -107,7 +107,15 @@ $("#secondBtn").click(function(){
     derivatedFunction = Number(a)*2 + 'x ' +  b;
     derivatedFunctionInPoint = a0 + 'x ' + b01;
 
-    $("#derivativeResult").html("<br><br><h5>Función derivada: <span>f'(x) = " + derivatedFunction + "</span></h5><h5>Función derivada en un punto: <span>f'(" + x + ") = " + derivatedFunctionInPoint + "</h5>")
+    $("#derivativeResult").html("<br><br><h5>Función derivada: <span>f'(x) = " + derivatedFunction + "</span></h5><h5 id='pointDerivativeDone'>Función derivada en un punto: <span>f'(" + x + ") = " + derivatedFunctionInPoint + "</h5>")
+    if ($("#derivativePoint").val() === '') 
+    {
+        $("#pointDerivativeDone").hide()
+    }
+    else
+    {
+        $("#pointDerivativeDone").show()
+    }
 })
 
 
